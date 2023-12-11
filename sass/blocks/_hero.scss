@@ -1,0 +1,41 @@
+.hero {
+  background: linear-gradient(45deg,rgba(29, 49, 60, 0.4) 0%, rgba(24, 30, 33, 0.4) 100%), url("./../../img/hero-bg/shawnanggg-nmpW_WwwVSc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding-top: 267px;
+  padding-bottom: 172px;
+}
+
+.hero__content {
+  max-width: 502px;
+
+  color: var(--main-text-color);
+}
+
+.hero__title {
+  margin-bottom: 24px;
+
+  font-family: var(--accent-font);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15.36px;
+}
+
+.hero__descr {
+  margin-bottom: 48px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}

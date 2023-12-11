@@ -1,10 +1,10 @@
 @import "./../fonts/melodrama/stylesheet.css";
+@import "./../fonts/satoshi/stylesheet.css";
 /* Document
  * ========================================================================== */
 /**
  * Add border box sizing in all browsers (opinionated).
  */
-@import url("https://fonts.cdnfonts.com/css/satoshi");
 *,
 ::before,
 ::after {
@@ -511,4 +511,115 @@ textarea,
   --header-bg-color: rgba(0, 0, 0, 0.1);
   --hero-bg-color: #303439;
   --input-bg-color: #F9F9F9;
+  --main-font: "Satoshi", sans-serif;
+  --accent-font: "Melodrama", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  font-weight: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  font-family: var(--accent-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.32px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--main-text-color);
+  background-color: var(--header-bg-color);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header__nav .nav__list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.header__nav .nav__item {
+  font-family: var(--main-font);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.hero {
+  background: linear-gradient(45deg, rgba(29, 49, 60, 0.4) 0%, rgba(24, 30, 33, 0.4) 100%), url("./../../img/hero-bg/shawnanggg-nmpW_WwwVSc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding-top: 267px;
+  padding-bottom: 172px;
+}
+
+.hero__content {
+  max-width: 502px;
+  color: var(--main-text-color);
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-family: var(--accent-font);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15.36px;
+}
+
+.hero__descr {
+  margin-bottom: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }/*# sourceMappingURL=main.css.map */

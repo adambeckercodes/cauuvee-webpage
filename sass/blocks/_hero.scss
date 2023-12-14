@@ -3,11 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  & .container {
+    padding-top: 267px;
+    padding-bottom: 172px;
+  }
 }
-.container {
-  padding-top: 267px;
-  padding-bottom: 172px;
-}
+
 
 .hero__content {
   max-width: 502px;
